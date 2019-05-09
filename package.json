@@ -5,10 +5,18 @@
   "main": "server.js",
   "author": "Andre Pato",
   "license": "MIT",
+  "scripts" : {
+    "start": "nodemon server.js",
+    "db:init": "dropdb --if-exists <<Pass in your DB Name Here>> && createdb <<Pass in your DB Name Here>>",
+    "db:reset": "node ./database/resetDb.js",
+    "db:seed": "node ./database/seedDb.js"
+  },
   "dependencies": {
+    "body-parser": "^1.19.0",
     "cors": "^2.8.5",
     "express": "^4.16.4",
     "morgan": "^1.9.1",
+    "nodemon": "^1.19.0",
     "pg": "^7.10.0",
     "sequelize": "^5.8.5"
   }
