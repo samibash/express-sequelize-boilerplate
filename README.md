@@ -1,8 +1,6 @@
-# express-sequelize-boilerplate
+# Express-Sequelize Boilerplate
 
 ## Quick Boiler plate to get an expressJS app with a postgres database up and running
-
-### Dependencies are built in for minimal setup
 
 # To Install dependencies use Npm install or Yarn install
 
