@@ -21,6 +21,14 @@ app.use(bodyParser.json());
 app.use('/route', PrimRoute);
 app.use('/secondRoute', SecondRoute);
 
+// test route to verify server is working
+app.get('/', (req, res) => {
+    try {
+        res.json({msg: 'Initial Testpoint, POSTMAN || INSOMNIA'});
+    } catch (error) {
+        console.log(error);
+    }
+});
 
 // telling express what port to listen on
 app.listen(PORT, () => {
